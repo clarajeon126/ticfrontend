@@ -1,0 +1,153 @@
+@font-face {
+  font-family: "Clara-Regular";
+  src: local("Clara-Regular"),
+   url("./fonts/Clara-Regular.ttf") format("truetype");
+  font-weight:bold;
+}
+* {
+  font-family: "Clara-Regular";
+  overflow: hidden;
+}
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.homeCenter {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.homeTitle {
+  font-size: 5rem;
+  color: #000000;
+  /* text-shadow: 0 0 10px #000; */
+}
+
+.buttonDiv {
+  overflow: visible;
+}
+.homeButtons {
+  background-color: transparent;
+  margin: 1rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  color: #000000;
+  text-decoration: none;
+  border-style: inset;
+  border: 1px solid #000000;
+}
+
+.homeButtons:hover {
+  background-color: #cfcfcf88;
+}
+.gameInput {
+  background-color: transparent;
+  margin: 1rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  color: #000000;
+  text-decoration: none;
+  border-style: inset;
+  border: 1px solid #000000;
+  width: 20rem;
+  text-align: center;
+}
+.backButton {
+  background-color: transparent;
+  margin: 1rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  color: #000000;
+  text-decoration: none;
+  border-style: inset;
+  border: 1px solid #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.backButton:hover {
+  background-color: #cfcfcf88;
+}
+
+.threeBoardContainer {
+
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  height: 15vw;
+  justify-content: space-evenly;
+
+}
+/* game css */
+.boardContainer {
+  display: flex;
+  width: 15vw;
+  height: 15vw;
+  background-image: url('./images/board.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.boardRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.boardSquare {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 1rem;
+  background-color: transparent;
+}
+
+.boardSquare:hover {
+  background-color: #cfcfcf88;
+}
+
+.boardSquareNoHover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 1rem;
+}
+
+.x {
+  background-image: url('./images/x.png');
+}
+.o {
+  background-image: url('./images/o.png');
+}
+
+.selected {
+  background-color: #e3e3e388;
+}
+.endGameScreen {
+  width: 50vw;
+  height: 50vh;
+  background-color: transparent;
+}
+
+#nonclickable {
+  background-color: rgba(226, 74, 74, 0.339);
+  opacity: 0.5;
+}
